@@ -138,11 +138,13 @@ const paramFizzBuzz = function(x) {
 // log to the console the reverse of the given string
 
 const reverseString= function(str) {
-
+  let reverseStr ="";
   // Your code goes here
   for (i = str.length - 1 ; i >= 0 ; i--){
-    console.log(str.charAt(i));
+    
+    reverseStr = reverseStr + str.charAt(i)
   }
+  console.log(reverseStr);
   // another answer
   // console.log(str.split("").reverse().join());
 }
